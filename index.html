@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROKTO - Blood Bank</title>
+    <style>
+       
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background: linear-gradient(135deg, #f53d4e, #8f2332, #8f0005);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box-container {
+            background: linear-gradient(135deg, #fff, #f8f9fa);
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            width: 350px;
+            padding: 30px;
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+
+        h1 {
+            margin: 0 0 10px;
+            font-size: 2em;
+            color: #bc0f0f;
+        }
+
+        p {
+            font-size: 1.1em;
+            color: #941414;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            display: block;
+            width: 80%;
+            margin: 10px auto;
+            padding: 12px 0;
+            font-size: 1.1em;
+            text-align: center;
+            background-color: #ff4b5c;
+            color: #fff;
+            text-decoration: none;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #d43c4c;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transform: scale(1.05);
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="box-container">
+        <h1>ROKTO</h1>
+        <p>A Safe BloodBank Built on Trust</p>
+        <a href="donor.php" class="button">I'm a donor</a>
+        <a href="search.php" class="button">I'm looking for blood</a>
+    </div>
+</body>
+</html>
